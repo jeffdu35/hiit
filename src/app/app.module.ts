@@ -6,9 +6,12 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './core/navbar/navbar.component';
 import { GainageComponent } from './wktype/gainage/gainage.component';
 import { CountersComponent } from './counters/counters.component';
+import { BenchpressComponent } from './wktype/benchpress/benchpress.component';
 
 const appRoutes : Routes = [
-{ path: 'wktype/gainage/', component: CountersComponent, }
+{ path: 'wktype/gainage/', component: GainageComponent, }
+{ path: 'wktype/benchpress/', component: BenchpressComponent, }
+{ path: 'counters/', component: CountersComponent, }
 ];
 
 @NgModule({
@@ -16,7 +19,8 @@ const appRoutes : Routes = [
     AppComponent,
     NavbarComponent,
     GainageComponent,
-	CountersComponent
+	CountersComponent,
+	BenchpressComponent,
   ],
   imports: [
     BrowserModule, 
