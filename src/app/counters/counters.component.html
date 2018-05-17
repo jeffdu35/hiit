@@ -1,0 +1,12 @@
+<h2>Ma session</h2>
+
+<ul class="counters">
+  <li *ngFor="let counter of counters"
+    [class.selected]="counter === selectedCounter"
+    (click)="onSelect(counter)">
+    <span class="badgeleft">{{counter.id}}</span> {{counter.name}}<span class="badgeright">{{counter.value}}</span>
+  </li>
+</ul>
+
+
+
